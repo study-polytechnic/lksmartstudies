@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LK SMART STUDIES — Apni Padhai, Apna Notebook</title>
+<meta name="description" content="LK Smart Studies — Class 9 se 12 tak ke liye notes, sample papers aur revision material, ek notebook jaisa asaan tareeka.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Punch holes running down the left edge, like a ring binder -->
+<div class="punch-column" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">LK</span>
+      <span class="brand-text">SMART STUDIES</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#subjects">Subjects</a>
+      <a href="#notes">Naye Notes</a>
+      <a href="#why">Kyun Hum</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu kholein" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <p class="eyebrow">Class 9 – 12 · Notes · Sample Papers · Revision</p>
+      <h1 class="hero-title">
+        Padhai <span class="hl">highlight</span> karo,
+        <br>result <span class="hl hl-alt">bold</span> karo.
+      </h1>
+      <p class="hero-sub">
+        LK Smart Studies pe milega har subject ka notebook‑style material — saaf, seedha aur exam ke hisaab se tayaar. Jo cheez pढ़ना hai, sirf wahi milega, ghumaav-firaav nahi.
+      </p>
+      <div class="hero-actions">
+        <a href="#subjects" class="btn btn-primary">Subjects Dekho</a>
+        <a href="#notes" class="btn btn-ghost">Latest Notes</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>4</strong><span>Classes</span></div>
+        <div class="stat"><strong>24+</strong><span>Subjects</span></div>
+        <div class="stat"><strong>300+</strong><span>Notes &amp; PDFs</span></div>
+      </div>
+    </div>
+    <div class="hero-page" aria-hidden="true">
+      <div class="page-lines"></div>
+      <div class="sticky-note">Kal test hai — Ch. 4 revise karo!</div>
+      <div class="tag-pin tag-pin-1">Class 10</div>
+      <div class="tag-pin tag-pin-2">Physics</div>
+    </div>
+  </section>
+
+  <!-- ============ CLASS FILTER + SUBJECTS ============ -->
+  <section class="subjects" id="subjects">
+    <div class="section-head">
+      <p class="eyebrow">Apni Class Chuno</p>
+      <h2>Subject-wise Study Material</h2>
+    </div>
+
+    <div class="class-tabs" id="classTabs" role="tablist" aria-label="Class chuno">
+      <button class="tab active" data-class="9" role="tab" aria-selected="true">Class 9</button>
+      <button class="tab" data-class="10" role="tab" aria-selected="false">Class 10</button>
+      <button class="tab" data-class="11" role="tab" aria-selected="false">Class 11</button>
+      <button class="tab" data-class="12" role="tab" aria-selected="false">Class 12</button>
+    </div>
+
+    <div class="search-row">
+      <input type="text" id="subjectSearch" placeholder="Subject search karo — jaise 'Maths' ya 'History'" aria-label="Subject search karo">
+    </div>
+
+    <div class="card-grid" id="subjectGrid"><!-- JS se fill hoga --></div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="why" id="why">
+    <div class="section-head">
+      <p class="eyebrow">Notebook Jaisa Bharosa</p>
+      <h2>Kyun LK Smart Studies?</h2>
+    </div>
+    <div class="why-grid">
+      <article class="why-card">
+        <span class="why-icon">✎</span>
+        <h3>Hath se likhe jaise notes</h3>
+        <p>Har topic point-wise, taaki exam se pehle ek nazar mein sab yaad aa jaye.</p>
+      </article>
+      <article class="why-card">
+        <span class="why-icon">🖇</span>
+        <h3>Syllabus se juda material</h3>
+        <p>Sirf wahi chapters aur PDFs, jo aapki current board ki class mein chalte hain.</p>
+      </article>
+      <article class="why-card">
+        <span class="why-icon">🔖</span>
+        <h3>Revision ke liye bookmark</h3>
+        <p>Important topics highlighted milte hain, jaise koi senior apni copy de raha ho.</p>
+      </article>
+      <article class="why-card">
+        <span class="why-icon">🕮</span>
+        <h3>Sample papers &amp; PYQs</h3>
+        <p>Purane paper practice karo aur apna exam-confidence khud test karo.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ LATEST NOTES ============ -->
+  <section class="notes" id="notes">
+    <div class="section-head">
+      <p class="eyebrow">Is Hafte Add Hua</p>
+      <h2>Naye Notes &amp; Updates</h2>
+    </div>
+    <ul class="notes-list" id="notesList"><!-- JS se fill hoga --></ul>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <p class="eyebrow">Sawaal Hai?</p>
+        <h2>Hume Likho, Jawab Aayega</h2>
+        <p>Koi subject miss ho gaya ya note galat lag raha hai — seedha yahin bata do.</p>
+        <ul class="contact-details">
+          <li>📧 hello@lksmartstudies.in</li>
+          <li>📞 +91 90000 00000</li>
+          <li>🕐 Somvar–Shanivar, 9am–7pm</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" placeholder="Apna naam likho" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="aapka@email.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Kya poochna hai?" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Message Bhejo</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">LK</span>
+      <span class="brand-text">SMART STUDIES</span>
+    </div>
+    <p>&copy; <span id="year"></span> LK Smart Studies. Padhai ke liye bana, padhai ke liye chala.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Upar jao">↑</button>
+
+<script src="script.js"></script>
+</body>
+                                    </html>
