@@ -399,3 +399,4 @@ section{ max-width: 1180px; margin: 0 auto; padding: 3.4rem var(--gutter); }
 }
 .back-to-top.visible{ opacity: 1; pointer-events: auto; }
 .back-to-top:hover{ transform: translateY(-3px); }
+   
